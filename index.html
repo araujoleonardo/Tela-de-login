@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <form action="">
+        <h3>Login</h3>
+        <input type="text" id="email" name="email" placeholder="Seu e-mail...">
+        <input type="password" id="senha" name="senha" placeholder="Sua senha...">
+        <input type="submit" id="acao" name="acao" value="Enviar">
+    </form>
+
+
+    <script>
+        var email = document.getElementById('email');
+        var senha = document.getElementById('senha');
+
+        email.addEventListener('focus', () => {
+            email.style.borderColor = "#4A5F6A";
+        });
+
+        senha.addEventListener('focus', () => {
+            senha.style.borderColor = "#4A5F6A";
+        });
+
+        email.addEventListener('blur', () => {
+            email.style.borderColor = "#ccc";
+        });
+
+        senha.addEventListener('blur', () => {
+            senha.style.borderColor = "#ccc";
+        });
+    </script>
+</body>
+</html>
